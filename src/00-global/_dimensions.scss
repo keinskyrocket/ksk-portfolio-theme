@@ -1,0 +1,13 @@
+$root-size: 16;
+
+$screen-xsmall:   576px !default;
+$screen-small:    781px !default;
+$screen-medium:   992px !default;
+$screen-large:    1200px !default;
+$screen-xlarge:   1400px !default;
+
+$screen-smartphone-portrait: 601px !default;
+
+$max-width-s: calc(640 / $root-size * 1rem);
+$max-width-m: calc(960 / $root-size * 1rem);
+$max-width-l: calc(1040 / $root-size * 1rem);

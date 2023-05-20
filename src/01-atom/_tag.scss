@@ -1,0 +1,32 @@
+@use "../_mixins" as *;
+@use "../00-global" as *;
+
+.wp-block-post-terms {
+  a {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    
+    color: $col-primary;
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
+    text-decoration: none !important;
+    
+    @include animation-transition;
+
+    &:before {
+      font: var(--fa-font-solid);
+      content: "\f02b";
+      margin-right: 0.25rem;
+    }
+
+    &:hover {
+      color: $col-primary-dark !important;
+    }
+
+    &:focus-visible {
+      @include focus-visible-primary;
+      @include border-radius-s
+    }
+  }
+}

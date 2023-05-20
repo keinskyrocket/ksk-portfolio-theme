@@ -1,0 +1,21 @@
+@use "../00-global/palette" as *;
+
+@mixin border-bottom {
+  border-bottom: $col-border solid 1px;
+}
+
+@mixin border {
+  border: $col-border solid 1px;
+}
+
+@mixin border-radius-s {
+  border-radius: calc( 2 / 16 * 1rem ) !important;
+}
+
+@mixin border-radius-m {
+  border-radius: calc( 4 / 16 * 1rem ) !important;
+}
+
+@mixin border-radius-l {
+  border-radius: calc( 8 / 16 * 1rem ) !important;
+}

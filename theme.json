@@ -1,0 +1,277 @@
+{
+	"settings": {
+		"appearanceTools": true,
+		"custom": {
+			"typography": {
+				"font-size": {
+					"colossal": "clamp(2.5rem, 6vw, 4rem)",
+					"gigantic": "clamp(2rem, 4vw, 3rem)",
+					"huge": "clamp(1.8rem, 3vw, 2.5rem)"
+				}
+			}
+		},
+		"layout": {
+			"wideSize": "1140px"
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "bitter",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/bitter/woff2/Bitter-Regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "bitter",
+							"fontStretch": "normal",
+							"fontStyle": "semibold",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/bitter/woff2/Bitter-SemiBold.woff2"
+							]
+						},
+						{
+							"fontFamily": "bitter",
+							"fontStretch": "normal",
+							"fontStyle": "bold",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/bitter/woff2/Bitter-Bold.woff2"
+							]
+						}
+					],
+					"fontFamily": "Bitter,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "Bitter",
+					"slug": "bitter"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/metropolis/woff2/Metropolis-Light.woff2"
+							]
+						},
+						{
+							"fontFamily": "metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/metropolis/woff2/Metropolis-Regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/metropolis/woff2/Metropolis-SemiBold.woff2"
+							]
+						},
+						{
+							"fontFamily": "metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/metropolis/woff2/Metropolis-Bold.woff2"
+							]
+						},
+						{
+							"fontFamily": "metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/metropolis/woff2/Metropolis-LightItalic.woff2"
+							]
+						},
+						{
+							"fontFamily": "metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/metropolis/woff2/Metropolis-RegularItalic.woff2"
+							]
+						},
+						{
+							"fontFamily": "metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/metropolis/woff2/Metropolis-SemiBoldItalic.woff2"
+							]
+						},
+						{
+							"fontFamily": "metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/metropolis/woff2/Metropolis-BoldItalic.woff2"
+							]
+						}
+					],
+					"fontFamily": "Metropolis,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "Metropolis",
+					"slug": "metropolis"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "X2 small",
+					"size": "12px",
+					"slug": "size-12"
+				},
+				{
+					"name": "X small",
+					"size": "16px",
+					"slug": "size-16"
+				},
+				{
+					"name": "Small",
+					"size": "18px",
+					"slug": "size-18"
+				},
+				{
+					"name": "Medium",
+					"size": "20px",
+					"slug": "size-20"
+				},
+				{
+					"name": "Large",
+					"size": "24px",
+					"slug": "size-24"
+				},
+				{
+					"name": "X Large",
+					"size": "28px",
+					"slug": "size-28"
+				},
+				{
+					"name": "X2 Large",
+					"size": "32px",
+					"slug": "size-32"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/paragraph": {
+				"spacing": {
+					"margin": {
+						"bottom": "1rem",
+						"left": "0",
+						"right": "0",
+						"top": "0"
+					}
+				}
+			}
+		},
+		"color": {
+			"text": "var:preset|color|black"
+		},
+		"elements": {
+			"button": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|metropolis",
+					"fontStyle": "normal",
+					"fontWeight": "400"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bitter)",
+					"fontSize": "var(--wp--custom--typography--font-size--colossal)",
+					"fontWeight": "600"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bitter)",
+					"fontSize": "var(--wp--custom--typography--font-size--gigantic)",
+					"fontWeight": "600"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bitter)",
+					"fontSize": "var(--wp--custom--typography--font-size--huge)",
+					"fontWeight": "600"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bitter)",
+					"fontSize": "var(--wp--preset--font-size--size-24)",
+					"fontWeight": "400"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
+					"fontSize": "var(--wp--preset--font-size--size-20)",
+					"fontWeight": "700"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
+					"fontSize": "var(--wp--preset--font-size--size-16)",
+					"fontWeight": "700",
+					"textTransform": "uppercase"
+				}
+			},
+			"heading": {
+				"spacing": {
+					"margin": {
+						"bottom": "0.5rem",
+						"left": "0",
+						"right": "0",
+						"top": "0"
+					}
+				},
+				"typography": {
+					"lineHeight": "1.2"
+				}
+			},
+			"link": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
+					"fontSize": "var:preset|font-size|size-20",
+					"fontStyle": "normal",
+					"fontWeight": "600",
+					"textDecoration": "underline"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|metropolis",
+			"fontSize": "var:preset|font-size|size-20",
+			"fontStyle": "normal",
+			"fontWeight": "400",
+			"lineHeight": "1.5"
+		}
+	},
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.2/theme.json"
+}

@@ -1,0 +1,151 @@
+@use "../_mixins" as *;
+@use "../00-global" as *;
+
+header {
+  .wp-block-navigation {
+    button {
+      color: $white !important;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      @include animation-transition;
+  
+      &:before {
+        font: var(--fa-font-solid);
+        content: "\f0c9";
+        margin-right: 0.25rem;
+      }
+  
+      &:focus-visible {
+        @include focus-visible-dark-bg;
+        @include border-radius-s;
+      }
+  
+      &:hover {
+        color: $col-primary !important;
+        letter-spacing: 0.3rem;
+      }
+    }
+  }
+  
+  .wp-block-navigation {
+    &__responsive-container {
+      background-color: $col-secondary-dark !important;
+    }
+
+    &__responsive-container-close {
+      position: relative;
+      top: 1rem;
+    
+      &:before {
+        font: var(--fa-font-solid);
+        content: "\f00d" !important;
+        margin-right: 0.25rem;
+      }
+    }
+  
+    &__responsive-close {
+      background-color: $col-secondary-dark !important;
+      height: 100%;
+      padding: 2rem;
+    }
+    
+    &__responsive-dialog {
+      background-color: $col-secondary-darker!important;
+      padding: 2rem;
+      height: 100%;
+      @include border-radius-m;
+    }
+  }
+  
+  .wp-block-site-logo {
+    .custom-logo-link {
+      @include animation-transition;
+      width: 2rem;
+  
+      &:hover {
+        background-color: $col-primary;
+        @include border-radius-m;
+      }
+  
+      &:focus-visible {
+        @include border-radius-m;
+        @include focus-visible-light-bg;
+      }
+    }
+  }
+  
+  .wp-block-pages-list {
+    &__item {
+      &__link {
+        color: $white !important;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+  
+        @include animation-transition;
+  
+        &:hover {
+          color: $col-primary !important;
+        }
+  
+        &:focus-visible {
+          @include border-radius-m;
+          @include focus-visible-dark-bg;
+        }
+      }
+    }
+  }
+
+  .link__talk-to-me {
+    a {
+      display: inline-block;
+      color: $white !important;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.1rem;
+      text-decoration: none;
+  
+      @include animation-transition;
+
+      &:before {
+        display: inline-block;
+        font: var(--fa-font-solid);
+        content: "\f27a" !important;
+        margin: 0 0.25rem;
+      }
+  
+      &:hover {
+        color: $col-primary !important;
+        letter-spacing: 0.15rem;
+      }
+  
+      &:focus-visible {
+        @include border-radius-s;
+        @include focus-visible-dark-bg;
+      }
+    }
+  }
+}
+
+footer {
+  .wp-block-pages-list {
+    &__item {
+      &__link {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+  
+        @include animation-transition;
+  
+        &:hover {
+          color: $col-primary !important;
+        }
+  
+        &:focus-visible {
+          @include border-radius-m;
+          @include focus-visible-dark-bg;
+        }
+      }
+    }
+  }  
+}

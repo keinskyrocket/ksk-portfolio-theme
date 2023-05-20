@@ -1,0 +1,95 @@
+@use "../00-global/palette" as *;
+@use "../_mixins/border" as *;
+@use "../_mixins/focus" as *;
+
+$threshold: 2px;
+
+.wpforms {
+  &-container {
+    color: $col-copy !important;
+
+    input,
+    textarea {
+      border: $col-border solid 1px !important;
+
+      &:focus-visible {
+				@include focus-visible-primary  
+      }
+    }
+
+    .wpforms-field {
+      &-label {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &-submit {
+		border: $col-button-default solid $threshold !important;
+		color: $col-button-default !important;
+		line-height: 1;
+		text-decoration: none;
+		padding: 1.5rem 2rem !important;
+		transition: 0.3s;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		@include border-radius-m;
+
+		// Form button only
+		background-color: transparent !important;
+		font-family: "metropolis";
+		font-size: 1.25rem !important;
+		font-weight: 600 !important;
+
+		&:focus {
+			&::after {
+				border: none !important;
+				top: 0 !important;
+				left: 0 !important;
+			}
+		}
+
+		&:focus-visible {
+			@include focus-visible-primary;
+			
+			&:after {
+				top: 0;
+				left: 0;
+				@include border-radius-s;
+			}
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			
+			width: 100%;
+			height: 100%;
+			transition: .3s;
+			@include border-radius-m;
+		}
+
+		&:after {
+			background-color: $col-primary;
+			border: $col-primary solid $threshold;
+			top: 4px;
+			left: 4px;
+			z-index: -1;
+		}
+
+		&:hover {
+      background: none !important;
+      background-color: transparent !important;
+
+			&:after {
+				top: calc($threshold * -1);
+				left: calc($threshold * -1);
+			}
+		}
+  }
+}

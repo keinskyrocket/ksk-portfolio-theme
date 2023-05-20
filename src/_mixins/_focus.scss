@@ -1,0 +1,25 @@
+@use "../00-global/palette" as *;
+
+@mixin focus-visible-primary {
+  box-shadow: 0 0 0 0.1rem $white, 0 0 0 0.1rem $white, 0 0 0 0.3rem $col-checked !important;
+  -webkit-box-shadow: 0 0 0 0.1rem $white, 0 0 0 0.1rem $white, 0 0 0 0.3rem $col-checked !important;
+  -moz-box-shadow: 0 0 0 0.1rem $white, 0 0 0 0.1rem $white, 0 0 0 0.3rem $col-checked !important;
+  outline: solid 0.2rem transparent !important; /* Visible in Windows high-contrast themes */
+  outline-offset: 0.1rem !important; /* Visible in Windows high-contrast themes */
+}
+
+@mixin focus-visible-dark-bg {
+  box-shadow: 0 0 0 0.1rem $col-secondary-darker, 0 0 0 0.1rem $col-secondary-darker, 0 0 0 0.3rem $col-checked !important;
+  -webkit-box-shadow: 0 0 0 0.1rem $col-secondary-darker, 0 0 0 0.1rem $col-secondary-darker, 0 0 0 0.3rem $col-checked !important;
+  -moz-box-shadow: 0 0 0 0.1rem $col-secondary-darker, 0 0 0 0.1rem $col-secondary-darker, 0 0 0 0.3rem $col-checked !important;
+  outline: solid 0.2rem transparent !important; /* Visible in Windows high-contrast themes */
+  outline-offset: 0.1rem !important; /* Visible in Windows high-contrast themes */
+}
+
+@mixin focus-visible-light-bg {
+  box-shadow: 0 0 0 0.1rem $col-secondary-lighter, 0 0 0 0.1rem $col-secondary-lighter, 0 0 0 0.3rem $col-checked !important;
+  -webkit-box-shadow: 0 0 0 0.1rem $col-secondary-lighter, 0 0 0 0.1rem $col-secondary-lighter, 0 0 0 0.3rem $col-checked !important;
+  -moz-box-shadow: 0 0 0 0.1rem $col-secondary-lighter, 0 0 0 0.1rem $col-secondary-lighter, 0 0 0 0.3rem $col-checked !important;
+  outline: solid 0.2rem transparent !important; /* Visible in Windows high-contrast themes */
+  outline-offset: 0.1rem !important; /* Visible in Windows high-contrast themes */
+}

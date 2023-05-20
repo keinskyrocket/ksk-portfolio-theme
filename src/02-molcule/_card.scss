@@ -1,0 +1,44 @@
+@use "../00-global" as *;
+@use "../_mixins" as *;
+
+.wp-block-post {
+  background-color: $col-background !important;
+  box-shadow: 0.1rem 0.1rem 0.25rem $col-secondary-light;
+  width: calc(100% - 0.83333em) !important;
+  @include border-radius-m;
+
+  @media (min-width: $screen-small) {
+    width: calc(100% / 2 - 0.83333em) !important;
+  }
+
+  @media (min-width: $screen-medium) {
+    width: calc(100% / 3 - 0.83333em) !important;
+  }
+}
+
+.wp-block-post-excerpt__excerpt {
+  font-size: 1rem;
+}
+
+.wp-block-post-featured-image {
+  a {
+    overflow: hidden;
+    @include border-radius-m;
+    @include animation-transition;
+
+    img {
+      transition: transform .5s ease;
+      @include border-radius-m;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.5);
+      }
+    }
+
+    &:focus-visible {
+      @include focus-visible-primary;
+    }
+  }
+}
