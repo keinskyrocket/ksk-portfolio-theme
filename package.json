@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "sass --no-source-map --watch src/:css/",
-    "build": "sass --no-source-map src/:css/ --style=compressed",
-    "haha": "webpack -v"
+    "build": "sass --no-source-map src/:css/ --style=compressed"
   },
   "keywords": [],
   "author": "",
